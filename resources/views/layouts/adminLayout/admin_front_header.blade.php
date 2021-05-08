@@ -8,9 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'RASANMART Online Store') }}</title>
-    <link rel="icon" href="/images/logo.png" style="width:100%"/>
-   
+    <title>{{ config('app.name', 'Nepal Springs') }}</title>
+    <link rel="icon" href="/images/nepalsprings-logo.png" style="width:100%" />
+
     <!-- Styles -->
     <!-- <link href="/css/app.css" rel="stylesheet"> -->
     <!--Boostrap-->
@@ -34,6 +34,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -50,261 +52,319 @@
 
 
 
-  
+
 </head>
 
 <body>
     <style>
-.search {
-    position: relative;
-    margin: 0 auto;
-   
-}
+        .section-bg {
+            background: linear-gradient(to right, rgba(0, 44, 143, 1) 0%, rgba(33, 182, 255, 1) 100%) !important;
+        }
 
-.search input {
-    height: 26px;
-    width: 100%;
-    padding: 0 12px 0 25px;
-    background: white url("https://cssdeck.com/uploads/media/items/5/5JuDgOa.png") 8px 6px no-repeat;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #a8acbc #babdcc #c0c3d2;
-    border-radius: 13px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-}
+        .nav-item {
+            padding-right: 20px;
+        }
 
-.search input:focus {
-    outline: none;
-    border-color: #66b1ee;
-    -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-}
+        .nav-item a {
+            font-size: 30px;
+            color: #fff;
+            font-family: 'Merriweather, sans-serif';
+            font-weight: 900;
+        }
 
-.search input:focus + .results { display: block }
-ul.results li {
-    font-size: 14px;
-}
-.search_product_name {
-    display: inline;
-}
-img.search-image {
-    width: 9%;
-    float: left;
-}
-.search_image_box {
-    display: inline;
-}
-.search .results {
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    right: 0;
-    z-index: 99999 !important;
-    padding: 0;
-    margin: 0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #cbcfe2 #c8cee7 #c4c7d7;
-    border-radius: 3px;
-    background-color: #fdfdfd;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
-    background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: linear-gradient(top, #fdfdfd, #eceef4);
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
+        .search {
+            position: relative;
+            margin: 0 auto;
 
-.search .results li { display: block }
+        }
 
-.search .results li:first-child { margin-top: -1px }
+        .search input {
+            height: 26px;
+            width: 100%;
+            padding: 0 12px 0 25px;
+            background: white url("https://cssdeck.com/uploads/media/items/5/5JuDgOa.png") 8px 6px no-repeat;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #a8acbc #babdcc #c0c3d2;
+            border-radius: 13px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+        }
 
-.search .results li:first-child:before, .search .results li:first-child:after {
-    display: block;
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    margin-left: -5px;
-    border: 5px outset transparent;
-}
+        .search input:focus {
+            outline: none;
+            border-color: #66b1ee;
+            -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+            -moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+            -ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+            -o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+            box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+        }
 
-.search .results li:first-child:before {
-    border-bottom: 5px solid #c4c7d7;
-    top: -11px;
-}
+        .search input:focus+.results {
+            display: block
+        }
 
-.search .results li:first-child:after {
-    border-bottom: 5px solid #fdfdfd;
-    top: -10px;
-}
+        ul.results li {
+            font-size: 14px;
+        }
 
-.search .results li:first-child:hover:before, .search .results li:first-child:hover:after { display: none }
+        .search_product_name {
+            display: inline;
+        }
 
-.search .results li:last-child { margin-bottom: -1px }
+        img.search-image {
+            width: 9%;
+            float: left;
+        }
 
-.search .results a {
-    display: block;
-    position: relative;
-    margin: 0 2px;
-    padding: 7px 40px 12px 10px;
-    color: #5b65a0;
-    font-weight: 500;
-    text-shadow: 0 1px #fff;
-    border: 1px solid #d0d0d0;
-    border-radius: 0px;
-}
-.search_product_name h6 {
-    margin-left: 14%;
-    font-weight: 800;
-    text-align: left;
-}
-span.search_sale_price {
-    text-align: right;
-    display: block;
-    color: #e81414;
-    font-weight: 800;
-}
+        .search_image_box {
+            display: inline;
+        }
 
-.search .results a span { font-weight: 200 }
+        .search .results {
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+            z-index: 99999 !important;
+            padding: 0;
+            margin: 0;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbcfe2 #c8cee7 #c4c7d7;
+            border-radius: 3px;
+            background-color: #fdfdfd;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
+            background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: linear-gradient(top, #fdfdfd, #eceef4);
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
 
-.search .results a:before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -9px;
-    background: url("https://cssdeck.com/uploads/media/items/7/7BNkBjd.png") 0 0 no-repeat;
-}
+        .search .results li {
+            display: block
+        }
 
-.search .results a:hover {
-    text-decoration: none;
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-    border-color: #2380dd #2179d5 #1a60aa;
-    background-color: #338cdf;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59aaf4), color-stop(100%, #338cdf));
-    background-image: -webkit-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -moz-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -ms-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -o-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: linear-gradient(top, #59aaf4, #338cdf);
-    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-}
+        .search .results li:first-child {
+            margin-top: -1px
+        }
 
-:-moz-placeholder {
-    color: #a7aabc;
-    font-weight: 200;
-}
+        .search .results li:first-child:before,
+        .search .results li:first-child:after {
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            margin-left: -5px;
+            border: 5px outset transparent;
+        }
 
-::-webkit-input-placeholder {
-    color: #a7aabc;
-    font-weight: 200;
-}
+        .search .results li:first-child:before {
+            border-bottom: 5px solid #c4c7d7;
+            top: -11px;
+        }
 
-.lt-ie9 .search input { line-height: 26px }
+        .search .results li:first-child:after {
+            border-bottom: 5px solid #fdfdfd;
+            top: -10px;
+        }
+
+        .search .results li:first-child:hover:before,
+        .search .results li:first-child:hover:after {
+            display: none
+        }
+
+        .search .results li:last-child {
+            margin-bottom: -1px
+        }
+
+        .search .results a {
+            display: block;
+            position: relative;
+            margin: 0 2px;
+            padding: 7px 40px 12px 10px;
+            color: #5b65a0;
+            font-weight: 500;
+            text-shadow: 0 1px #fff;
+            border: 1px solid #d0d0d0;
+            border-radius: 0px;
+        }
+
+        .search_product_name h6 {
+            margin-left: 14%;
+            font-weight: 800;
+            text-align: left;
+        }
+
+        span.search_sale_price {
+            text-align: right;
+            display: block;
+            color: #e81414;
+            font-weight: 800;
+        }
+
+        .search .results a span {
+            font-weight: 200
+        }
+
+        .search .results a:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            margin-top: -9px;
+            background: url("https://cssdeck.com/uploads/media/items/7/7BNkBjd.png") 0 0 no-repeat;
+        }
+
+        .search .results a:hover {
+            text-decoration: none;
+            color: #fff;
+            text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+            border-color: #2380dd #2179d5 #1a60aa;
+            background-color: #338cdf;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59aaf4), color-stop(100%, #338cdf));
+            background-image: -webkit-linear-gradient(top, #59aaf4, #338cdf);
+            background-image: -moz-linear-gradient(top, #59aaf4, #338cdf);
+            background-image: -ms-linear-gradient(top, #59aaf4, #338cdf);
+            background-image: -o-linear-gradient(top, #59aaf4, #338cdf);
+            background-image: linear-gradient(top, #59aaf4, #338cdf);
+            -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+            -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+            -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+        }
+
+        :-moz-placeholder {
+            color: #a7aabc;
+            font-weight: 200;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #a7aabc;
+            font-weight: 200;
+        }
+
+        .lt-ie9 .search input {
+            line-height: 26px
+        }
 
 
 
 
 
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #AC030F;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
-.sidebar-loading p {
-    text-align: center;
-    padding: 31px 0px 0px 0px;
-}
-.sidebar-loading h4 {
-    color: red;
-    text-align: center;
-    padding: 66px 0px 47px 0px;
-}
-.loader-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 0px 8.00rem;
-}
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #AC030F;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+        .sidebar-loading p {
+            text-align: center;
+            padding: 31px 0px 0px 0px;
+        }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-#mask {
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:9000;
-  background-color:#26262c;
-  display:none;
-}  
-#boxes .window {
-  position:absolute;
-  left:0;
-  top:0;
-  width:440px;
-  height:850px;
-  display:none;
-  z-index:9999;
-  padding:20px;
-  border-radius: 5px;
-  text-align: center;
-}
-#boxes #dialog {
-  width:auto; 
-  height:auto;
-  padding: 10px 10px 10px 10px;
-  background-color:#ffffff;
-  font-size: 15pt;
-}
+        .sidebar-loading h4 {
+            color: red;
+            text-align: center;
+            padding: 66px 0px 47px 0px;
+        }
 
-.agree:hover{
-  background-color: #D1D1D1;
-}
-.popupoption:hover{
- background-color:#D1D1D1;
- color: green;
-}
-.popupoption2:hover{
- color: red;
-}
+        .loader-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 0px 8.00rem;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9000;
+            background-color: #26262c;
+            display: none;
+        }
+
+        #boxes .window {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 440px;
+            height: 850px;
+            display: none;
+            z-index: 9999;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #boxes #dialog {
+            width: auto;
+            height: auto;
+            padding: 10px 10px 10px 10px;
+            background-color: #ffffff;
+            font-size: 15pt;
+        }
+
+        .agree:hover {
+            background-color: #D1D1D1;
+        }
+
+        .popupoption:hover {
+            background-color: #D1D1D1;
+            color: green;
+        }
+
+        .popupoption2:hover {
+            color: red;
+        }
+
         .h6 {
             font-size: 20px;
         }
@@ -324,9 +384,9 @@ span.search_sale_price {
         }
 
         .top-bar {
-       background-color: auto !important;
-       text-align: center;
-   }
+            background-color: auto !important;
+            text-align: center;
+        }
 
         .sidebar__subtotal-savings {
             display: -ms-flexbox;
@@ -351,9 +411,11 @@ span.search_sale_price {
         .savings-title {
             color: #c1282f;
         }
+
         span.fas.fa-shopping-cart.btn-icon__inner {
-    color: #fff;
-}
+            color: #fff;
+        }
+
         .savings-amount {
             font-weight: 700;
             color: #c1282f;
@@ -390,7 +452,7 @@ span.search_sale_price {
                 font-size: 14px;
             }
 
-            .pp  a {
+            .pp a {
                 padding-right: 0px !important;
             }
 
@@ -404,7 +466,7 @@ span.search_sale_price {
                 padding-left: 5px;
             }
 
-            .dropdown-link > a {
+            .dropdown-link>a {
                 font-size: 12.5px;
             }
 
@@ -419,6 +481,7 @@ span.search_sale_price {
                 position: fixed;
                 right: 0;
             }
+
             .window {
                 left: 75px !important;
             }
@@ -433,9 +496,11 @@ span.search_sale_price {
             section.bg.sticky-top {
                 position: fixed;
             }
+
             .window {
                 left: 0px !important;
             }
+
             .agree img {
                 margin-right: 2px !important;
             }
@@ -465,7 +530,7 @@ span.search_sale_price {
                 height: 52px;
             }
 
-            
+
             section.bg.sticky-top .container {
                 margin-top: 8px !important;
             }
@@ -480,7 +545,7 @@ span.search_sale_price {
         }
     </style>
     <div id="app">
-        <section class="pad navbar nav p-0">
+        <!-- <section class="pad navbar nav p-0">
             <div class="container-fluid">
                 <div class="col-md-4 col-sm-4">
                     <h1 class="top-bar text-white mb-0">Quality, On time Guarantee, Free delivery <i class="fa fa-shopping-cart"></i></h1>
@@ -498,9 +563,9 @@ span.search_sale_price {
                         </p>
                         <?php
 
-use Illuminate\Support\Facades\DB;
+                        use Illuminate\Support\Facades\DB;
 
-if (Auth::check()) { ?>
+                        if (Auth::check()) { ?>
                             <p class="anchor text-white mb-0">
                                 <a class="border-left pl-4 mr-4" href="/logout"><i class="fas fa-sign-in-alt mr-2"></i></i>Logout</a>
                             </p>
@@ -519,21 +584,55 @@ if (Auth::check()) { ?>
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="section-bg">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"><img src="/images/nepalsprings-logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </section>
 
-        <section>
+
+        <section style="display:none">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 pt-3">
                         <a href="/"><img class="img-responsive mt-1 mb-1 ml-5 margin-lef1" src="/images/logo.png" alt=""></a>
                     </div>
                     <div class="col-md-9">
                         <div class="row">
                             <div class="col-10">
-                        
 
-           
-                                <div class="">
+
+
+                                <!-- <div class="">
                                 <form class="form-inline" action="/search" method="get">
                         <input type="text" name="search-text" id="search-text" placeholder="Enter the Product Name" class="form-control mt-4 mr-4 form-input">
                         <button type="submit" class="btn btn-md btn-danger btn-size mt-4">Search</button>
@@ -546,22 +645,22 @@ if (Auth::check()) { ?>
                     </ul>
                          </div>
                     </div>   
-                    </div>
+                    </div> -->
 
                             </div>
 
                             <div class="col-2 cart-bar">
-                                <button type="submit" class="btn btn-md btn-dark margin-t1" id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-secondary ml-1" href="javascript:;" role="button" aria-controls="sidebarContent" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent" data-unfold-type="css-animation" data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight" data-unfold-duration="500">
+                                <!-- <button type="submit" class="btn btn-md btn-dark margin-t1" id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-secondary ml-1" href="javascript:;" role="button" aria-controls="sidebarContent" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent" data-unfold-type="css-animation" data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight" data-unfold-duration="500">
 
                                 <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-secondary ml-1" href="javascript:;" role="button" aria-controls="sidebarContent" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent" data-unfold-type="css-animation" data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight" data-unfold-duration="500">
-                                    <span class="fas fa-shopping-cart btn-icon__inner"></span>
-                                    <!-- <span class="badge badge-sm badge-primary badge-pos rounded-circle">1</span> -->
-                                </a>
+                                    <span class="fas fa-shopping-cart btn-icon__inner"></span> -->
+                                <!-- <span class="badge badge-sm badge-primary badge-pos rounded-circle">1</span> -->
+                                <!-- </a> -->
 
                                 </button>
 
 
-                               
+
                                 <!-- Button trigger modal-->
                                 <div class="modal fade right" id="modalAbandonedCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
                                     <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
@@ -633,7 +732,8 @@ if (Auth::check()) { ?>
                                                     </div>
                                                 </div>
                                             </div>
- <input type="text" class="form-control" id="order_value" name="order_value" value="<?php  $order_value=DB::table("order_values")->where("id",1)->first(); echo $order_value->value; ?>">
+                                            <input type="text" class="form-control" id="order_value" name="order_value" value="<?php $order_value = DB::table("order_values")->where("id", 1)->first();
+                                                                                                                                echo $order_value->value; ?>">
 
                                             <!--Footer-->
                                             <div class="modal-footer justify-content-center">
@@ -654,7 +754,7 @@ if (Auth::check()) { ?>
             </div>
         </section>
 
-        <section class="bg sticky-top">
+        <!-- <section class="bg sticky-top">
             <div class="container">
                 <div class="row">
 
@@ -680,11 +780,11 @@ if (Auth::check()) { ?>
                                                 <div class="dropdown second">
 
                                                     <ul>
-                                                    <?php $k=1; ?>
+                                                    <?php $k = 1; ?>
                                                         @foreach($categories as $category)
                                                        
                                                         
-                                                        <?php if($k<=6){
+                                                        <?php if ($k <= 6) {
 
                                                         ?> 
 <div class="menu-left">
@@ -692,8 +792,8 @@ if (Auth::check()) { ?>
                                                             <a href="/product-category/{{$category->id}}">hi {{$category->name}}</a>
                                                         </li></div>
                                                         <?php }
-                                                       
-                                                        if($k>6){
+
+                                                        if ($k > 6) {
 
                                                         ?>
                                                         <div class="menu-right">
@@ -729,15 +829,15 @@ if (Auth::check()) { ?>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <main class="py-4">
             @yield('content')
         </main>
     </div>
     <!-- ========== SECONDARY CONTENTS ========== -->
     <!-- Account Sidebar Navigation -->
- 
-    <aside id="sidebarContent" data-backdrop="static" data-keyboard="false" class="u-sidebar" aria-labelledby="sidebarNavToggler" style="z-index:99999;background:#fff">
+
+    <aside id="sidebarContent" data-backdrop="static" data-keyboard="false" class="u-sidebar" aria-labelledby="sidebarNavToggler" style="z-index:99999;background:#fff" style="display:none">
         <div class="u-sidebar__scroller">
             <div class="u-sidebar__container">
                 <div class="u-sidebar__cart-footer-offset">
@@ -758,18 +858,18 @@ if (Auth::check()) { ?>
                             <p class="mb-0 text-left" style="padding-left: 54px;padding-top: 10px;font-size: 17px;">Your Shopping Lists</p>
                             <!-- Body -->
                             <div class="p-2" id="card-body">
-                            <div class="sidebar-inside">
-          
-          <div class="sidebar-loading">
-          <h4 style="color:red;text-align:center;padding: 66px 0px 47px 0px">Slow Internet Detected</h4>
-          <div class="loader-body ">
-          
-                            <div class="loader"></div>
+                                <div class="sidebar-inside">
 
-                            </div>
-                            <p>Please ! <span style="color:red">Try Again<span></p>
-                            </div>
-                            </div>
+                                    <div class="sidebar-loading">
+                                        <h4 style="color:red;text-align:center;padding: 66px 0px 47px 0px">Slow Internet Detected</h4>
+                                        <div class="loader-body ">
+
+                                            <div class="loader"></div>
+
+                                        </div>
+                                        <p>Please ! <span style="color:red">Try Again<span></p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -817,23 +917,22 @@ if (Auth::check()) { ?>
 
 <!-- JS Plugins Init. -->
 <script>
+    $(window).on('load', function() {
 
-$(window).on('load', function() {
+        $.ajax({
 
-    $.ajax({
+            type: "GET",
+            data: {
+                _token: '{{ csrf_token() }}'
+            },
+            url: "/fetch-cart",
 
-type: "GET",
-data: {
-    _token: '{{ csrf_token() }}'
-},
-url: "/fetch-cart",
+            success: function(cart) {
 
-success: function(cart) {
-
-    $('#card-body').html(cart);
-}
-})
-});
+                $('#card-body').html(cart);
+            }
+        })
+    });
     $(document).ready(function() {
 
         $("#sidebarNavToggler").click(function() {
@@ -847,7 +946,7 @@ success: function(cart) {
                 url: "/fetch-cart",
 
                 success: function(cart) {
-           
+
                     $('#card-body').html(cart);
                 }
             })
@@ -892,13 +991,13 @@ success: function(cart) {
 
     }
 
-        function deleteTab(id){
-          var id=id;
-       
-            var url = "/delete-cart";
-      
+    function deleteTab(id) {
+        var id = id;
+
+        var url = "/delete-cart";
+
         var dltUrl = url + "/" + id;
-      
+
         $.ajax({
             url: dltUrl,
             type: "GET",
@@ -931,88 +1030,88 @@ success: function(cart) {
 
 
 
-       
-  };
- 
+
+    };
 </script>
 <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <link rel="stylesheet" href="http://t4t5.github.io/sweetalert/dist/sweetalert.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
-        <script type="text/javascript">
-            // jQuery wait till the page is fullt loaded
-            $(document).ready(function () {
-                // keyup function looks at the keys typed on the search box
-                $('#search-text').on('keyup',function() {
-                    // the text typed in the input field is assigned to a variable 
-                    var query = $(this).val();
-                    
-                    url="/autocomplete"
-                    var Url = url + "/" + query;
-             
-                    // call to an ajax function
-                    $.ajax({
-                        // assign a controller function to perform search action - route name is search
-                        url:Url,
-                        // since we are getting data methos is assigned as GET
-                        type:"GET",
-                        // data are sent the server
-                        data:{'search-text':query},
-                        // if search is succcessfully done, this callback function is called
-                        error: function (data) {
-                            $('#results .list-li').remove();
-                        },
-                        success:function (data) {
-                            // print the search results in the div called country_list(id)
-                            $('#results .list-li').remove();
-                              for (var i=0; i<data.length; i++) {
-                                 $('#results').append('<li class="list-li"><a href="/product-details/'+data[i].id+'"><div class="col-sm-12"><div class="search_image_box "><img class="search-image" src="/images/backend_images/products/small/'+data[i].product_image+'"></div><div class="search_product_name"><h6>'+data[i].product_name+'</h6><span class="search_sale_price">NPR. '+data[i].sale_price+'</span></div></div></li>');
+<script type="text/javascript">
+    // jQuery wait till the page is fullt loaded
+    $(document).ready(function() {
+        // keyup function looks at the keys typed on the search box
+        $('#search-text').on('keyup', function() {
+            // the text typed in the input field is assigned to a variable 
+            var query = $(this).val();
 
-}
+            url = "/autocomplete"
+            var Url = url + "/" + query;
 
-                            
-                        }
-                       
-                    })
-                    // end of ajax call
-                });
+            // call to an ajax function
+            $.ajax({
+                // assign a controller function to perform search action - route name is search
+                url: Url,
+                // since we are getting data methos is assigned as GET
+                type: "GET",
+                // data are sent the server
+                data: {
+                    'search-text': query
+                },
+                // if search is succcessfully done, this callback function is called
+                error: function(data) {
+                    $('#results .list-li').remove();
+                },
+                success: function(data) {
+                    // print the search results in the div called country_list(id)
+                    $('#results .list-li').remove();
+                    for (var i = 0; i < data.length; i++) {
+                        $('#results').append('<li class="list-li"><a href="/product-details/' + data[i].id + '"><div class="col-sm-12"><div class="search_image_box "><img class="search-image" src="/images/backend_images/products/small/' + data[i].product_image + '"></div><div class="search_product_name"><h6>' + data[i].product_name + '</h6><span class="search_sale_price">NPR. ' + data[i].sale_price + '</span></div></div></li>');
 
-                // initiate a click function on each search result
-                $(document).on('click', 'li', function(){
-                    // declare the value in the input field to a variable
-                    var value = $(this).text();
-                    // assign the value to the search box
-                    $('#country').val(value);
-                    // after click is done, search results segment is made empty
-                    $('#country_list').html("");
-                });
-            });
-        </script>
-    
-    <script type="text/javascript">
+                    }
 
-$(document).ready(function(){
 
-    $("#search-text").autocomplete({
+                }
 
-    minLength: 0
-}).on("focus", function () {  
-alert( document.getElementById('search-text').value);
-$.ajax({
-type: "GET",
+            })
+            // end of ajax call
+        });
 
-url: "/autocomplete",
-
-success: function(data) {
-
-   console.log(data);
-}
-})
-})
-});
+        // initiate a click function on each search result
+        $(document).on('click', 'li', function() {
+            // declare the value in the input field to a variable
+            var value = $(this).text();
+            // assign the value to the search box
+            $('#country').val(value);
+            // after click is done, search results segment is made empty
+            $('#country_list').html("");
+        });
+    });
 </script>
-   
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#search-text").autocomplete({
+
+            minLength: 0
+        }).on("focus", function() {
+            alert(document.getElementById('search-text').value);
+            $.ajax({
+                type: "GET",
+
+                url: "/autocomplete",
+
+                success: function(data) {
+
+                    console.log(data);
+                }
+            })
+        })
+    });
+</script>
+
 @stack('post_scripts')
 
 </body>

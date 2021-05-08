@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'RASANMART') }}</title>
+    <title>{{ config('app.name', 'NepalSprings') }}</title>
     <link rel="icon" href="/images/title-icon.png"/>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
