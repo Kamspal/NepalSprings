@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" />
 
 
 <!-- Scripts -->
@@ -416,12 +416,14 @@
         background-image: url('/images/testimonials.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        z-index: 0;
+        z-index: 1;
         background-position: 50% 0;
         margin-top: 100px;
+        position: relative;
     }
 
-    .testimonial-bg::after {
+    .testimonial-bg:after {
+        position: absolute;
         background: #112c91;
         opacity: .85;
         content: "";
@@ -429,13 +431,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 1;
+        z-index: -1;
         width: 100%;
         height: 100%;
-    }
-
-    .testimonial-bg::after {
-        background: #002c8f;
     }
 
     .swiper-container {
@@ -499,6 +497,11 @@
         background-clip: padding-box;
         margin-bottom: 20px;
         z-index: 2;
+    }
+
+    .inner-data:hover .photo img {
+        transition: all 0.3s ease-in;
+        transform: scale(1.1);
     }
 
     .inner-content::before {
@@ -716,9 +719,88 @@
     .mt8:hover a {
         background-color: #1FB6FF !important;
         border-color: #1FB6FF !important;
-        
+
     }
 
+
+    .bg-lightblue .container {
+        background-color: #1FB6FF;
+        border-radius: 20px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: -75px;
+        z-index: 10;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .form1 {
+        position: relative;
+        background: 0 0;
+        padding: 0;
+        max-width: 530px;
+    }
+
+    .form1 .input-group {
+        position: relative;
+        display: table;
+        border-collapse: separate;
+    }
+
+    .form1 input[type=email] {
+        padding: 12px 26px;
+        line-height: 1.9em;
+        font-size: 14px;
+        display: table-cell;
+        border: 0 none;
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        color: #112c91;
+        transition: all .3s ease;
+        border-radius: 32px;
+    }
+
+    .input-group-btn {
+        position: relative;
+        display: table-cell;
+        width: 1%;
+        vertical-align: middle;
+    }
+
+    .input-group .btn {
+        margin: 0 0 0 -42px;
+        margin-top: 0 !important;
+        position: relative;
+        font-size: 15px;
+        padding: 12px 50px !important;
+        min-width: 200px;
+        line-height: 1.9em;
+        border: 0 none;
+        border-radius: 32px !important;
+        color: #fff;
+    }
+
+    .btn-black-filled {
+        border-color: #002c8f;
+        background-color: #002c8f;
+    }
+
+    .btn-black-filled:hover {
+        color: #fff;
+        background-color: #AEC556;
+        border-color: #AEC556;
+        transition: all 0.3s ease;
+    }
+
+    .input-group-btn:last-child>.btn {
+        z-index: 2;
+        margin-bottom: 0;
+    }
+
+    .pt10 {
+        padding-top: 12px;
+    }
 
     .add-to-cart {
         margin-left: auto !important;
@@ -1077,7 +1159,7 @@ $(document).ready(function() {
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="text"><span class="quote font-headers">”</span>
-                                    <p class="pb-5">Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.</p>
+                                    <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.</p>
                                 </div>
                             </div>
                         </div>
@@ -1179,6 +1261,56 @@ $(document).ready(function() {
         </div>
     </div>
 </section>
+
+
+<section class="pt100 pb100 bg-lightblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="wrapper text-right">
+                    <div class="text-left d-inline-block">
+                        <h5 class="m-0 text-white">SUBSCRIBE</h5>
+                        <h5 class="m-0">Weekly Newsletter</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="wrapper pt10">
+                    <form class="form1" action="">
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Your email address" required>
+                            <span class="input-group-btn">
+                                <button class="btn btn-black-filled color-hover-second" type="submit">Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
