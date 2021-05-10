@@ -1141,6 +1141,11 @@
             margin-left: auto !important;
         }
 
+        .col-xl-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
     }
 
     @media screen and (max-width: 375px) {
