@@ -124,7 +124,7 @@
 
     .back-img {
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 0;
         z-index: 0;
         transform: translate(-50%, -50%);
