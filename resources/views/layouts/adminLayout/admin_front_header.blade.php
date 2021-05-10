@@ -72,6 +72,22 @@
             font-weight: 900;
         }
 
+        .navbar-toggler {
+            border-color: none;
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('images/download.svg');
+        }
+
+        .nav-link {
+            opacity: 1;
+        }
+
         .search {
             position: relative;
             margin: 0 auto;
@@ -593,7 +609,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -914,6 +930,12 @@
 
 <script src="{{ asset('js/backend_js/sidebar/bootstrap.min.js') }}"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+<script>
+    $('.navbar-toggler').on('click', function() {
+        $('.navbar-collapse').slideToggle('slow').collapse('hide');
+    });
+</script>
 
 <!-- JS Plugins Init. -->
 <script>

@@ -111,6 +111,11 @@
         text-decoration: none;
     }
 
+    .front-img {
+        position: relative;
+        z-index: 99999;
+    }
+
     .top-img {
         height: auto;
         max-width: 120%;
@@ -119,8 +124,8 @@
 
     .back-img {
         position: absolute;
-        top: 130%;
-        left: -50%;
+        top: 0;
+        left: 0;
         z-index: 0;
         transform: translate(-50%, -50%);
         height: auto;
@@ -815,12 +820,274 @@
     }
 
     @media screen and (max-width: 1024px) {
+        .nav-item a {
+            font-size: 25px;
+        }
+
+        .top-img {
+            width: 110%;
+        }
+
+        .button-responsive {
+            padding-top: 50px;
+        }
+
+        .col-xl-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .mineral-glass img {
+            max-width: 100%;
+            vertical-align: top;
+            height: auto;
+        }
+
+        .water5 {
+            width: 100%;
+        }
+
+        .dflex {
+            padding-bottom: 50px;
+        }
+
+        .blue-bg {
+            padding: 55px;
+        }
+
+
+        .border-inner {
+            border-right: none;
+        }
+
+        .bordernone {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .swiper-container {
+            height: auto;
+        }
+
+        .inner-data {
+            height: 680px;
+        }
+
+        .col-lg-2 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
         .total-amount span {
             margin-left: 31px;
         }
 
         .product-grid4 .add-to-cart {
             font-size: 11px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-text {
+            padding-top: 50px;
+            font-size: 30px;
+        }
+
+        .button-responsive {
+            padding-top: 50px;
+        }
+
+        .button-responsive .btn {
+            min-width: 150px;
+        }
+
+        .btn-read,
+        .btn-make {
+            margin-bottom: 25px;
+        }
+
+        .top-img,
+        .back-img,
+        .mineral-glass,
+        .free-bg img {
+            display: none;
+        }
+
+        .mineral {
+            font-size: 36px;
+        }
+
+        .calcium,
+        .calcium1 {
+            text-align: center !important;
+        }
+
+        .header-text span {
+            font-size: 36px;
+        }
+
+        .top-img {
+            width: 100%;
+        }
+
+        .mineral-glass img {
+            width: 100%;
+        }
+
+        .back-img {
+            top: 296%;
+            left: -1%;
+            height: 450px;
+        }
+
+        .water5 {
+            width: 100%;
+        }
+
+        .header {
+            padding-top: 50px;
+        }
+
+        .header h2 {
+            font-size: 36px;
+        }
+
+        .header p {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+
+        .check ul li span {
+            font-size: 16px;
+        }
+
+        .blue-bg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .blue {
+            font-size: 18px !important;
+            line-height: 28px;
+        }
+
+        .border-inner {
+            border-right: none;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+
+        .testimonials .inner-content {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .inner-content {
+            padding: 70px 15px 30px;
+            margin: 40px 0px 20px;
+            height: auto !important;
+        }
+
+        .inner-content::after {
+            bottom: 0;
+            width: 96%;
+            height: 20px;
+            z-index: -3;
+        }
+
+        .swiper-container {
+            height: auto !important;
+        }
+
+        .top img {
+            float: none;
+            margin: 0 auto
+        }
+
+        .top .name {
+            font-size: 18px;
+        }
+
+        .top .subheader {
+            text-align: center;
+        }
+
+        .text .quote {
+            top: 26%;
+        }
+
+        .text p {
+            font-size: 16px;
+        }
+
+        .inner-data {
+            height: auto;
+        }
+
+        .posts a h4 {
+            font-size: 26px;
+        }
+
+        .form1 {
+            margin: 0 auto;
+        }
+
+        .lg-dark {
+            margin-bottom: 0 !important;
+        }
+
+        .bg-lightblue .container {
+            padding: 25px;
+        }
+
+        .wrapper {
+            text-align: center !important;
+        }
+
+        .bg-lightblue h5 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+
+        .col-md-offset-3 {
+            margin-left: auto !important;
+        }
+
+        .footer-wrapper h2 {
+            font-size: 30px;
+        }
+
+        .footer-text p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .col-md-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-md-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-md-offset-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .water55 {
+            display: none;
+        }
+
+        .col-sm-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
         }
     }
 
@@ -844,6 +1111,36 @@
         .product-grid4 .product-new-label {
             left: 14px;
         }
+
+        .input-group-btn {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn-black-filled {
+            margin: auto !important;
+        }
+
+        .col-xs-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-md-3 {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        .col-md-4 {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+        .col-md-offset-3 {
+            margin-left: auto !important;
+        }
+
     }
 
     @media screen and (max-width: 375px) {
@@ -927,14 +1224,13 @@ $(document).ready(function() {
             <div class="col-md-6 col-sm-12">
                 <h3 class="text-white header-text font-weight-bold pt150 pb-4">Mineral Water <br> <span class="color">For Everyday</span> </h3>
                 <p class="text-white font-small"><i>Vestibulum non nisi tincidunt, pulvinar nibh sed, accumsan dui. In purus dolor, lobortis eget sapien quis.</i></p>
-                <div class="pt100">
+                <div class="pt100 button-responsive">
                     <button class="btn btn-customize btn-read mr-4"><a href="">Read more</a></button>
                     <button class="btn btn-customize btn-make"><a href="">Make order</a></button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <img class="pt-5 top-img" src="/images/water.png" alt="">
-                <img class="back-img" src="/images/glass-water-bg.png" alt="">
             </div>
         </div>
     </div>
@@ -947,7 +1243,7 @@ $(document).ready(function() {
             <h3 class="mineral">Mineral composition</h3>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 float-left pt50">
+            <div class="col-lg-3 col-md-3 col-sm-6 float-left pt50 calcium">
                 <h4>Calcium+</h4>
                 <h6>5-12 mg/dm<span><sub>3</sub></span> </h6>
                 <p class="text-small"><i>Vestibulum non nisi tincidunt, pulvinar nibh sed, accumsan dui. In purus dolor.</i></p>
@@ -959,9 +1255,10 @@ $(document).ready(function() {
                 <p class="text-small"><i>Vestibulum non nisi tincidunt, pulvinar nibh sed, accumsan dui. In purus dolor.</i></p>
             </div>
             <div class="col-sm-6 mineral-glass pt50">
-                <img width="540" height="421" src="/images/mineral-glass.png" alt="">
+                <img class="front-img" width="540" height="421" src="/images/mineral-glass.png" alt="">
+                <img class="back-img" src="/images/glass-water-bg.png" alt="">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 pt50">
+            <div class="col-lg-3 col-md-3 col-sm-6 pt50 calcium1">
                 <h4>Chlorine</h4>
                 <h6>~46 mg/dm<span><sub>3</sub></span> </h6>
                 <p class="text-small"><i>Vestibulum non nisi tincidunt, pulvinar nibh sed, accumsan dui. In purus dolor.</i></p>
@@ -1039,8 +1336,8 @@ $(document).ready(function() {
 <section class="free-bg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="pt50" width="550" height="614" src="/images/water5.png" alt="">
+            <div class="col-lg-6 col-md-6 col-sm-12 water55">
+                <img class="pt50 water5" width="550" height="614" src="/images/water5.png" alt="">
                 <div class="free-tag">
                     <img width="123" height="122" src="/images/free.png" alt="">
                 </div>
@@ -1057,7 +1354,7 @@ $(document).ready(function() {
                         <li><i class="fa fa-check"></i><strong><span>8:00 - 22:00</span></strong></li>
                     </ul>
                 </div>
-                <div class="pt-3">
+                <div class="pt-3 dflex">
                     <button class="btn btn-customize btn-read mr-4"><a href="">Read more</a></button>
                     <button class="btn btn-customize btn-make"><a href="">Make order</a></button>
                 </div>
@@ -1069,7 +1366,7 @@ $(document).ready(function() {
 <section class="blue-bg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12 border-inner">
+            <div class="col-lg-4 col-md-12 col-sm-12 border-inner bordernone">
                 <div class="inner">
                     <h5 class="blue">Our company was founded in 1965</h5>
                     <h6 class="dark-blue">Aquatiras is ideal for drinking, cooking, sports and even for children. The product is certified in 12 countries.</h6>

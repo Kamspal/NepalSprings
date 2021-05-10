@@ -70,14 +70,13 @@
     .upbtn {
         background: transparent !important;
         right: 60px !important;
+        z-index: 99999;
     }
 
     @media screen and (max-width:1024px) {
         .promo .text-wrapper .wrapper h5 {
             font-size: 16px;
         }
-
-
         .upbtn {
             z-index: 99999;
         }
@@ -92,6 +91,10 @@
         .promo .text-icon i {
             font-size: 24px;
         }
+
+        .upbtn {
+            display: none !important;
+        }
     }
 
     @media screen and (max-width:425px) {
@@ -102,9 +105,8 @@
         .marginb425 {
             margin-bottom: 10px;
         }
-
-
     }
+
 </style>
 
 
