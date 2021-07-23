@@ -219,3 +219,18 @@ Route::get('/payment-policy',function(){
     
 	return view('payment-policy');
 });
+
+Route::get('/products',function(){
+    
+	return view('products');
+});
+
+Route::get('/contact-us',function(){
+    
+	return view('contact-us');
+});
+
+Route::get('/about-us',function(){
+    
+	return view('about-us');
+});

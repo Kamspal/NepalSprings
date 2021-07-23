@@ -636,6 +636,12 @@
         border-top-right-radius: 20px;
     }
 
+    select {
+        width: 81%;
+        font-size: 12px;
+        color: #aec556;
+    }
+
     .photo img {
         transition: all .3s ease-in;
         border-bottom-right-radius: 0;
@@ -1287,18 +1293,24 @@ $(document).ready(function() {
             <h3 class="mineral">Choose your water</h3>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="water-set">
                     <a href=""><img class="water1" width="220" height="220" src="/images/water1.jpg" alt=""></a>
                     <a href="">
-                        <h5>Water set</h5>
+                        <h5>Nepal Spring Premium</h5>
                     </a>
                     <p>Duis et aliquam orci. Vivamus augue quam, ...</p>
-                    <h6>$9.00 – $19.99</h6>
-                    <a class="btn btn-md cart-btn" href=""><i class="fa fa-shopping-cart pr-2"></i>select options</a>
+                    <h6><label for="">Choose product:</label>
+                        <select name="" id="">
+                            <option value="Jar Security Money = NPR 2500.00 (For 2 Pieces Jar)">Jar Security Money = NPR 2500.00 (For 2 Pieces Jar)</option>
+                            <option value="Re-Filling Charge = NPR 125.00 (Per/ Jar with Home Delivery)">Re-Filling Charge = NPR 125.00 (Per/ Jar with Home Delivery)</option>
+                            <option value="For Subscribers = 20 Times Free Jar Re-Filling (No Charges)">For Subscribers = 20 Times Free Jar Re-Filling (No Charges)</option>
+                        </select>
+                    </h6>
+                    <a class="btn btn-md cart-btn" href=""><i class="fa fa-shopping-cart pr-2"></i>add to cart</a>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="water-set">
                     <a href=""><span class="sale">SALE !</span><img class="water1" width="220" height="220" src="/images/water2.jpg" alt=""></a>
                     <a href="">
@@ -1308,8 +1320,8 @@ $(document).ready(function() {
                     <h6><span>$7.89</span> $6.99</h6>
                     <a class="btn btn-md cart-btn" href=""><i class="fa fa-shopping-cart pr-2"></i>add to cart</a>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            </div> -->
+            <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="water-set">
                     <a href=""><img class="water1" width="220" height="220" src="/images/water3.jpg" alt=""></a>
                     <a href="">
@@ -1319,15 +1331,21 @@ $(document).ready(function() {
                     <h6>$14.00</h6>
                     <a class="btn btn-md cart-btn" href=""><i class="fa fa-shopping-cart pr-2"></i>add to cart</a>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            </div> -->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="water-set">
                     <a href=""><img class="water1" width="220" height="220" src="/images/water4.jpg" alt=""></a>
                     <a href="">
-                        <h5>Drop of water. Mineral</h5>
+                        <h5>Nepal Spring</h5>
                     </a>
                     <p>Duis et aliquam orci. Vivamus augue quam, ...</p>
-                    <h6>$6.75</h6>
+                    <h6><label for="">Choose product:</label>
+                        <select name="" id="">
+                            <option value="Jar Security Money = NPR 600.00 (For 2 Pieces Jar)">Jar Security Money = NPR 600.00 (For 2 Pieces Jar)</option>
+                            <option value="Re-Filling Charge = NPR 50.00 (Per/Jar with Home Delivery)">Re-Filling Charge = NPR 50.00 (Per/Jar with Home Delivery)</option>
+                            <option value="For Subscribers = 12 Times Free Jar Re-Filling (No Charges)">For Subscribers = 12 Times Free Jar Re-Filling (No Charges)</option>
+                        </select>
+                    </h6>
                     <a class="btn btn-md cart-btn" href=""><i class="fa fa-shopping-cart pr-2"></i>add to cart</a>
                 </div>
             </div>
@@ -1337,6 +1355,13 @@ $(document).ready(function() {
         </div>
     </div>
 </section>
+
+<div class="container-fluid pb-5">
+    <div class="row">
+        <iframe width="1440" height="515" src="https://www.youtube.com/embed/TzlVKkvd5H4?start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h4 class="mt-3 text-center">Water Processing</h4>
+</div>
 
 <section class="free-bg">
     <div class="container">
@@ -1373,8 +1398,10 @@ $(document).ready(function() {
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 border-inner bordernone">
                 <div class="inner">
-                    <h5 class="blue">Our company was founded in 1965</h5>
-                    <h6 class="dark-blue">Aquatiras is ideal for drinking, cooking, sports and even for children. The product is certified in 12 countries.</h6>
+                    <h5 class="blue">Our company was founded in 2021</h5>
+                    <h6 class="dark-blue">This Company deals in the field of “Food and Beverage”. We are the fastest growing
+                        company of food and beverage in Nepal. In this episode, we have established a new RO Water
+                        Treatment Plant in Gawaldha, Chalnakhel, Kathmandu to serve the people of NEPAL.</h6>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 border-inner">

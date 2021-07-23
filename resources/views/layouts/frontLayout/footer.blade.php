@@ -148,7 +148,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <p class="text-center mb-0 text-white">© 2021 NepalSprings Pvt. Ltd. All rights reserved. Designed by <a href="http://nepgeeks.com/" target="_blank">Nepgeeks Technology</a></p>
+                <p class="text-center mb-0 text-white">© 2021 NEPAL FOOD AND BEVERAGE PVT. LTD. All rights reserved. Designed by <a href="http://nepgeeks.com/" target="_blank">Nepgeeks Technology</a></p>
             </div>
         </div>
     </div>

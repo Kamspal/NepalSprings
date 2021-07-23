@@ -612,13 +612,13 @@
                     <div class="navbar-collapse collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="/about-us">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
+                                <a class="nav-link" href="/products">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blogs</a>
@@ -627,7 +627,7 @@
                                 <a class="nav-link" href="#">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="/contact-us">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -749,7 +749,7 @@
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" id="order_value" name="order_value" value="<?php $order_value = DB::table("order_values")->where("id", 1)->first();
-                                                                                                                                echo $order_value->value; ?>">
+                                                                                                                                // echo $order_value->value; ?>">
 
                                             <!--Footer-->
                                             <div class="modal-footer justify-content-center">
