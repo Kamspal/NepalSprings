@@ -1285,6 +1285,12 @@ $(document).ready(function() {
     </div>
 </section>
 
+<div class="container-fluid pb-5">
+    <div class="row">
+        <iframe width="1440" height="515" src="https://www.youtube.com/embed/TzlVKkvd5H4?start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h4 class="mt-3 text-center">Water Processing</h4>
+</div>
 
 <section class="pt100 pb100 choose-bg">
     <div class="container">
@@ -1355,13 +1361,6 @@ $(document).ready(function() {
         </div>
     </div>
 </section>
-
-<div class="container-fluid pb-5">
-    <div class="row">
-        <iframe width="1440" height="515" src="https://www.youtube.com/embed/TzlVKkvd5H4?start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <h4 class="mt-3 text-center">Water Processing</h4>
-</div>
 
 <section class="free-bg">
     <div class="container">
