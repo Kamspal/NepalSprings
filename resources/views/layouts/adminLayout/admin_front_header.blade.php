@@ -65,6 +65,10 @@
             padding-right: 20px;
         }
 
+        .nav-item:hover a{
+            color: #1FB6FF;
+        }
+
         .nav-item a {
             font-size: 30px;
             color: #fff;

@@ -399,7 +399,7 @@
                 <div class="col-md-12 text-page">
                     <article class="post-25 page type-page status-publish hentry">
                         <div class="entry-content clear-fix">
-                            <section data-vc-full-width="true" data-vc-full-width-init="true" class="vc_section" style="position: relative; left: -120px; box-sizing: border-box; width: 1440px; padding-left: 120px; padding-right: 120px;">
+                            <section data-vc-full-width="true" data-vc-full-width-init="true" class="vc_section" style="position: relative; box-sizing: border-box; padding-left: 120px; padding-right: 120px;">
                                 <div class="vc_row wpb_row vc_row-fluid">
                                     <div class="wpb_column vc_column_container vc_col-sm-6">
                                         <div class="vc_column-inner">

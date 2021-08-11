@@ -251,12 +251,12 @@
                @endif 
                @if (Request::path() == ('contact-us'))
                <li class="archive post-product-archive current-item"><span property="itemListElement" typeof="ListItem"><span property="name">Contact Us</span>
-                    <meta property="position" content="2">
+                    <meta property="position" content="3">
                 </span></li>
                 @endif
                 @if (Request::path() == ('about-us'))
                <li class="archive post-product-archive current-item"><span property="itemListElement" typeof="ListItem"><span property="name">About Us</span>
-                    <meta property="position" content="2">
+                    <meta property="position" content="4">
                 </span></li>
                 @endif
         </ul>
