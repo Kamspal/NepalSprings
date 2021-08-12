@@ -390,6 +390,28 @@
         border-color: #AEC556;
         transition: all 0.3s ease;
     }
+
+    @media screen and (max-width: 425px) {
+        .vc_col-sm-6 {
+            width: 100%;
+        }
+
+        .blue {
+            padding-top: 20px;
+        }
+
+        .blue-bg {
+            padding: 0;
+        }
+
+        .col-md-3 {
+            text-align: left !important;
+        }
+
+        .col-md-offset-3 {
+            margin-left: 0% !important;
+        }
+    }
 </style>
 
 <div class="container">
@@ -399,7 +421,7 @@
                 <div class="col-md-12 text-page">
                     <article class="post-25 page type-page status-publish hentry">
                         <div class="entry-content clear-fix">
-                            <section data-vc-full-width="true" data-vc-full-width-init="true" class="vc_section" style="position: relative; box-sizing: border-box; padding-left: 120px; padding-right: 120px;">
+                            <section style="position: relative; box-sizing: border-box;">
                                 <div class="vc_row wpb_row vc_row-fluid">
                                     <div class="wpb_column vc_column_container vc_col-sm-6">
                                         <div class="vc_column-inner">

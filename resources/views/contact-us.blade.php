@@ -338,6 +338,109 @@
         color: #fff;
         background: #AEC556;
     }
+
+    @media screen and (max-width: 1024px) {
+        iframe {
+            width: 1024px;
+        }
+
+        .vc_col-lg-4 {
+            width: 50%;
+        }
+
+        .vc_col-sm-6 {
+            width: 100%;
+        }
+
+        .vc_col-md-12 {
+            width: 100%;
+        }
+
+        .heading.heading-large h3 {
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        iframe {
+            width: 768px;
+        }
+
+        .vc_col-lg-4 {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        iframe {
+            width: 425px;
+        }
+
+        .social-icons-list li {
+            font-size: 15px;
+        }
+
+        .mobile-response {
+            text-align: center;
+        }
+
+        .mobile-response input {
+            min-width: 150px;
+        }
+
+        .col-md-offset-3 {
+            margin-left: 0 !important;
+        }
+
+        .heading.heading-large h3 {
+            font-size: 30px;
+        }
+
+        .wpb_wrapper p {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        iframe {
+            width: 375px;
+        }
+
+        .social-icons-list li {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        iframe {
+            width: 320px;
+        }
+
+        .header {
+            font-size: 24px !important;
+        }
+
+        .social-icons-list li {
+            font-size: 11px;
+        }
+
+        .vc_col-sm-4 {
+            width: 100%;
+        }
+
+        .wpcf7-form-control-wrap input,
+        .wpcf7-form-control-wrap textarea {
+            padding: 0px;
+        }
+
+        .wpcf7-textarea {
+            height: 80px;
+        }
+
+        .mobile-response input {
+            min-width: 130px;
+        }
+    }
 </style>
 
 <div class="container">
@@ -347,7 +450,7 @@
                 <div class="col-md-12 text-page">
                     <article class="post-25 page type-page status-publish hentry">
                         <div class="entry-content clear-fix">
-                            <section data-vc-full-width="true" data-vc-full-width-init="true" class="vc_section" style="position: relative; left: -120px; box-sizing: border-box; width: 1440px; padding-left: 120px; padding-right: 120px;">
+                            <section data-vc-full-width="true" data-vc-full-width-init="true" class="vc_section" style="position: relative; box-sizing: border-box;`z">
                                 <div class="vc_row wpb_row vc_row-fluid vc_row-o-content-top vc_row-flex">
                                     <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-6">
                                         <div class="vc_column-inner">
@@ -416,11 +519,11 @@
                                                     <div role="form" class="wpcf7" id="wpcf7-f1551-p25-o1" lang="en-US" dir="ltr">
                                                         <div class="screen-reader-response"></div>
                                                         <form action="{{}}" method="post" class="wpcf7-form" novalidate="novalidate">
-                                                           @csrf
+                                                            @csrf
                                                             <p><label> Your Name<br> <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required></span> </label></p>
                                                             <p><label> Your Email<br> <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required></span> </label></p>
                                                             <p><label> Your Message<br> <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
-                                                            <p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                                            <p class="mobile-response"><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
                                                             <div class="wpcf7-response-output wpcf7-display-none"></div>
                                                         </form>
                                                     </div>

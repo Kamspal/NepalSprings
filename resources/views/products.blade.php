@@ -384,6 +384,56 @@
         color: #fff;
         background: #122C90;
     }
+
+    @media screen and (max-width: 768px) {
+
+        .woocommerce-ordering {
+            display: block;
+            float: none;
+            clear: both;
+        }
+
+        .col-lg-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col-xl-9 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-lg-8 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .woocommerce ul.products li.product {
+            width: 48%;
+            float: left;
+            clear: both;
+            margin: 0 0 2.992em;
+        }
+
+        ul.products[class*=columns-] li.product:nth-child(2n) {
+            float: right;
+            clear: none !important;
+        }
+
+        .woocommerce-page ul.products li.first {
+            clear: none;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        ul.products li.product {
+            width: 100%;
+        }
+
+        .col-md-offset-3 {
+            margin-left: 0% !important;
+        }
+    }
 </style>
 <div class="container">
     <div class="inner-page margin-default">
