@@ -139,9 +139,8 @@
             justify-content: center;
         }
 
-        .page-header {
+        .page-header, #nav-wrapper {
             background-image: url('/images/aqua-banner.jpeg') !important;
-            border-bottom: 1px solid #eee;
         }
 
         header.page-header:before {
@@ -155,7 +154,7 @@
             z-index: 3;
         }
 
-        header.page-header:after {
+        header.page-header:after, #nav-wrapper:after {
             background: #112c91;
             content: "";
             position: absolute;
@@ -217,7 +216,13 @@
         }
 
         #nav-wrapper {
-            background-color: #082A89;
+            border-bottom: none !important;
+            position: relative;
+        }
+
+        .pos {
+            position: relative;
+            z-index: 2;
         }
 
 
@@ -250,6 +255,16 @@
         }
 
         @media screen and (max-width: 768px) {
+            header.page-header.header-h1 {
+                min-height: auto !important;
+            }
+
+            header.page-header {
+                padding: 55px 0 94px;
+            }
+            .nav-link {
+                opacity: 1;
+            }
 
             h1 {
                 font-size: 40px;
@@ -270,6 +285,11 @@
                 flex: 0 0 82%;
                 max-width: 82%;
                 top: -164px;
+            }
+
+            .calcium,
+            .calcium1 {
+                top: 0px !important;
             }
 
             .col-md-9 {
@@ -319,43 +339,58 @@
             .input-group .btn {
                 margin: 0;
             }
+
+            .h6,
+            h6 {
+                margin: 0px !important;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+
+            h3,
+            .h3 {
+                font-size: 30px;
+            }
+
+            .mineral {
+                font-size: 30px !important;
+            }
         }
     </style>
 
     <div id="nav-wrapper">
-        <section class="section-bg">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img src="/images/nepalsprings-logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <div class="container pos">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="/images/nepalsprings-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/about-us">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/products">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact-us">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </section>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
     <header class="page-header  header-h1 ">
         <div class="container tc">

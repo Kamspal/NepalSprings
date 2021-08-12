@@ -404,12 +404,44 @@
             padding: 0;
         }
 
-        .col-md-3 {
-            text-align: left !important;
-        }
-
         .col-md-offset-3 {
             margin-left: 0% !important;
+        }
+
+        h3,
+        .h3 {
+            font-size: 36px;
+        }
+
+        .comment-text .text-large,
+        .text-page .text-large {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        h3,
+        .h3 {
+            font-size: 25px;
+        }
+
+        h4,
+        .h4 {
+            font-size: 22px;
+        }
+
+        .blue {
+            font-size: 16px !important;
+        }
+
+        h6,
+        .h6 {
+            font-size: 14px;
+        }
+
+        .mineral {
+            font-size: 26px !important;
         }
     }
 </style>
