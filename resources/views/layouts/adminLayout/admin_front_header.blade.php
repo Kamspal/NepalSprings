@@ -53,6 +53,10 @@
 
 <body>
     <style>
+        aside {
+            display: none;
+        }
+
         .water {
             width: 75px;
             height: 75px;
@@ -518,10 +522,6 @@
             color: #AB020E;
         }
 
-        .u-sidebar[aria-labelledby] {
-            display: none;
-        }
-
         @media screen and (max-width:1024px) {
             .top-bar {
                 font-size: 14px;
@@ -912,7 +912,7 @@
             </div>
         </section> -->
         <main class="py-4">
-            <!-- @yield('content') -->
+            @yield('content')
         </main>
     </div>
     <!-- ========== SECONDARY CONTENTS ========== -->
