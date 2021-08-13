@@ -433,6 +433,15 @@
         .col-md-offset-3 {
             margin-left: 0% !important;
         }
+
+        .widget-area {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .woocommerce-result-count {
+            margin-left: 10px;
+        }
     }
 </style>
 <div class="container">

@@ -49,6 +49,9 @@
     <!-- welcome Page -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 
 
@@ -63,6 +66,10 @@
     <style>
         body {
             font-family: 'Merriweather';
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
         }
 
         #nav-wrapper nav.navbar.navbar-transparent-light,
@@ -139,7 +146,8 @@
             justify-content: center;
         }
 
-        .page-header, #nav-wrapper {
+        .page-header,
+        #nav-wrapper {
             background-image: url('/images/aqua-banner.jpeg') !important;
         }
 
@@ -154,7 +162,8 @@
             z-index: 3;
         }
 
-        header.page-header:after, #nav-wrapper:after {
+        header.page-header:after,
+        #nav-wrapper:after {
             background: #112c91;
             content: "";
             position: absolute;
@@ -262,6 +271,7 @@
             header.page-header {
                 padding: 55px 0 94px;
             }
+
             .nav-link {
                 opacity: 1;
             }

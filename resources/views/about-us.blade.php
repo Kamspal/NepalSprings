@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -391,7 +392,22 @@
         transition: all 0.3s ease;
     }
 
+    @media screen and (max-width: 768px) {
+
+        .calcium,
+        .calcium1 {
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+        }
+    }
+
     @media screen and (max-width: 425px) {
+
+        .hidden-xl,
+        .visible-xs {
+            height: 0 !important;
+        }
+
         .vc_col-sm-6 {
             width: 100%;
         }
@@ -416,6 +432,24 @@
         .comment-text .text-large,
         .text-page .text-large {
             font-size: 16px;
+        }
+
+        .calcium,
+        .calcium1 {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+
+        .input-group .btn {
+            margin: auto !important;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+
+        h3,
+        .h3 {
+            font-size: 30px;
         }
     }
 
@@ -461,7 +495,7 @@
                                                 <div class="es-resp">
                                                     <div class="visible-xl" style="height: 5px;"></div>
                                                     <div class="hidden-xl hidden-sm hidden-md hidden-ms hidden-xs" style="height: 64px;"></div>
-                                                    <div class="visible-xs" style="height: 64px;"></div>
+                                                    <div class="v-xs" style="height: 64px;"></div>
                                                 </div>
                                                 <div class="heading  head-subheader align-left color-black subcolor-main transform-default   vc_custom_1515771135702" id="like_sc_header_1074572928">
                                                     <h6 class="subheader font-main">About us</h6>

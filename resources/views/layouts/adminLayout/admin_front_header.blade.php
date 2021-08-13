@@ -466,7 +466,6 @@
         .tr1 {
             color: #AB020E;
         }
-
         @media screen and (max-width:1024px) {
             .top-bar {
                 font-size: 14px;

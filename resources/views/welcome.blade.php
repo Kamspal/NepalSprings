@@ -1098,6 +1098,9 @@
     }
 
     @media screen and (max-width:425px) {
+        .mineral {
+            font-size: 30px;
+        }
         .cart-product-quantity .input-group {
             left: 6% !important;
         }
@@ -1151,7 +1154,6 @@
             flex: 0 0 100%;
             max-width: 100%;
         }
-
     }
 
     @media screen and (max-width: 375px) {
