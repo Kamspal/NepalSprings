@@ -90,10 +90,10 @@
             </div>
         <!-- </nav> -->
         @include('layouts.frontLayout.footer')
-        <main class="py-4">
-            <!-- @yield('content') -->
+        <!-- <main class="py-4">
+            @yield('content')
             
-        </main>
+        </main> -->
         
     </div>
 
