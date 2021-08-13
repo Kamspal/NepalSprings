@@ -60,7 +60,6 @@
             position: absolute !important;
             top: 30%;
             left: 50%;
-            right: 50%;
             z-index: 2;
             border-radius: 50%;
             position: relative;
@@ -519,6 +518,10 @@
             color: #AB020E;
         }
 
+        .u-sidebar[aria-labelledby] {
+            display: none;
+        }
+
         @media screen and (max-width:1024px) {
             .top-bar {
                 font-size: 14px;
@@ -909,7 +912,7 @@
             </div>
         </section> -->
         <main class="py-4">
-            @yield('content')
+            <!-- @yield('content') -->
         </main>
     </div>
     <!-- ========== SECONDARY CONTENTS ========== -->
