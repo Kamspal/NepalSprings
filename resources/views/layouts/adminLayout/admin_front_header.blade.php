@@ -564,6 +564,10 @@
         }
 
         @media screen and (max-width: 425px) {
+            .water {
+                top: 50%;
+                left: 40%;
+            }
 
             section.bg.sticky-top {
                 position: fixed;
