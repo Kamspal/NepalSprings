@@ -77,6 +77,7 @@
         .promo .text-wrapper .wrapper h5 {
             font-size: 16px;
         }
+
         .upbtn {
             z-index: 99999;
         }
@@ -106,7 +107,6 @@
             margin-bottom: 10px;
         }
     }
-
 </style>
 
 
@@ -120,7 +120,8 @@
                 <div class="footer-wrapper mb-5">
                     <h2 class="text-white">Nepal Spring</h2>
                     <div class="footer-text">
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus tristique ligula quis orci malesuada tincidunt.</p>
+                        <p class="text-white">Our vision is to become fastest growing Number 1 Company of RO Water in Nepal. We want
+                            to reach 90% population of Nepal with our product. The targeted time will be within Year 2025.</p>
                     </div>
                 </div>
                 <div class="social-icons">

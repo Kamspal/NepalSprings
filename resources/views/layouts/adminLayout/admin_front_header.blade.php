@@ -49,14 +49,66 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 
-
-
-
-
 </head>
 
 <body>
     <style>
+        .water {
+            width: 75px;
+            height: 75px;
+            background-color: #1D9EE5;
+            position: absolute !important;
+            top: 30%;
+            left: 50%;
+            right: 50%;
+            z-index: 2;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .water:before,
+        .water:after {
+            content: '';
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            top: -32px;
+            background-color: #fff;
+        }
+
+        .water:before {
+            border-radius: 45%;
+            background: rgba(255, 255, 255, .7);
+            animation: wave 5s linear infinite;
+        }
+
+        .water:after {
+            border-radius: 35%;
+            background: rgba(255, 255, 255, .3);
+            animation: wave 5s linear infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loadingDiv {
+            position: absolute;
+            ;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
         .section-bg {
             background: linear-gradient(to right, rgba(0, 44, 143, 1) 0%, rgba(33, 182, 255, 1) 100%) !important;
         }
@@ -65,7 +117,7 @@
             padding-right: 20px;
         }
 
-        .nav-item:hover a{
+        .nav-item:hover a {
             color: #1FB6FF;
         }
 
@@ -466,6 +518,7 @@
         .tr1 {
             color: #AB020E;
         }
+
         @media screen and (max-width:1024px) {
             .top-bar {
                 font-size: 14px;
@@ -564,6 +617,7 @@
         }
     </style>
     <div id="app">
+        <div class="water"></div>
         <!-- <section class="pad navbar nav p-0">
             <div class="container-fluid">
                 <div class="col-md-4 col-sm-4">
@@ -752,7 +806,8 @@
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" id="order_value" name="order_value" value="<?php $order_value = DB::table("order_values")->where("id", 1)->first();
-                                                                                                                                // echo $order_value->value; ?>">
+                                                                                                                                // echo $order_value->value; 
+                                                                                                                                ?>">
 
                                             <!--Footer-->
                                             <div class="modal-footer justify-content-center">
@@ -1139,16 +1194,25 @@
 
 @stack('post_scripts')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $('body').append('<div style="" id="loadingDiv"><div class="water"></div></div>');
+    $(window).on('load', function() {
+        setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
+    });
+
+    function removeLoader() {
+        $(".water").fadeOut(200, function() {
+            // fadeOut complete. Remove the loading div
+            $("#loadingDiv").remove(); //makes page more lightweight 
+            $(".water").remove(); //makes page more lightweight 
+        });
+    }
+</script>
+
+
 </body>
 <input type="number" name="counter" id="counter" value="0" style="visibility: hidden;">
 
 </html>
-
-
-
-
-
-
-
-
-

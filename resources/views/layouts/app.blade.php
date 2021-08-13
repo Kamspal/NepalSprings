@@ -42,8 +42,6 @@
             background-position: relative;
             background-repeat: no-repeat;
     }
-
-    
 </style>
 
     <div id="app">

@@ -101,10 +101,10 @@
 
     .comment-text .text-large,
     .text-page .text-large {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 400;
         line-height: 36px;
-        font-family: 'Merriweather';
+        font-family: 'Open Sans';
         color: #21b6ff;
     }
 
@@ -113,7 +113,7 @@
         font-size: 18px;
         line-height: 26px;
         font-family: 'Open Sans';
-        color: #333;
+        color: #122B90;
         font-weight: 400;
     }
 
@@ -392,6 +392,10 @@
         transition: all 0.3s ease;
     }
 
+    .fs-17 {
+        font-size: 17px;
+    }
+
     @media screen and (max-width: 768px) {
 
         .calcium,
@@ -505,8 +509,7 @@
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <h4><span class="color-main text-large">“National Food And Beverage Pvt. Ltd.” is a newly established company in Year 2021 at the
-                                                                    pick time of SARS-COVID-19 Pandemic period. The registration number is ………………………….. and
-                                                                    licence number…………………………………. are of the company.</span></h4>
+                                                                    pick time of SARS-COVID-19 Pandemic period.</span></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -538,15 +541,15 @@
                                                 <div class="ltx-content-width col-align-left" style="max-width: 680px">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p><span class="text-small">Currently, we have two types of product services of 20 Litter Jar Water.
-                                                                    <p>1. Nepal Spring Premium </p>
-                                                                    <p>2. Nepal Spring</p>
-                                                                    <p>1. Nepal Spring Premium: Is the high quality product of RO Water. This contains added minerals in
-                                                                        water and with high quality of packing.</p>
-                                                                    <p>2. Nepal Spring: Is the moderated quality product of RO Water. This contains moderated minerals
-                                                                        in water and good quality of packing.</p>
-                                                                </span></p>
-                                                            <p>Note: We provide free delivers service to your destination point.</p>
+                                                            <p><span class="text-small">Currently, we have two types of product services of 20 Litter Jar Water.</span></p>
+                                                                    <p><span class="text-small">1. Nepal Spring Premium</span></p>
+                                                                    <p><span class="text-small">2. Nepal Spring</span></p>
+                                                                    <p><span class="text-small">1. Nepal Spring Premium: Is the high quality product of RO Water. This contains added minerals in
+                                                                        water and with high quality of packing.</span></p>
+                                                                    <p><span class="text-small">2. Nepal Spring: Is the moderated quality product of RO Water. This contains moderated minerals
+                                                                        in water and good quality of packing.</span></p>
+                                                             
+                                                            <p><span class="text-small">Note: We provide free delivers service to your destination point.</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -593,9 +596,9 @@
             <div class="col-lg-4 col-md-12 col-sm-12 border-inner bordernone">
                 <div class="inner">
                     <h5 class="blue">Our company was founded in 2021</h5>
-                    <h6 class="dark-blue">This Company deals in the field of “Food and Beverage”. We are the fastest growing
+                    <p class="dark-blue fs-17"><strong>This Company deals in the field of “Food and Beverage”. We are the fastest growing
                         company of food and beverage in Nepal. In this episode, we have established a new RO Water
-                        Treatment Plant in Gawaldha, Chalnakhel, Kathmandu to serve the people of NEPAL.</h6>
+                        Treatment Plant in Gawaldha, Chalnakhel, Kathmandu to serve the people of NEPAL.</strong></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 border-inner">

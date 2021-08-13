@@ -825,6 +825,10 @@
         color: #fff !important;
     }
 
+    .fs-17 {
+        font-size: 17px;
+    }
+
     @media screen and (max-width: 1024px) {
         .nav-item a {
             font-size: 25px;
@@ -1101,6 +1105,7 @@
         .mineral {
             font-size: 30px;
         }
+
         .cart-product-quantity .input-group {
             left: 6% !important;
         }
@@ -1236,7 +1241,7 @@ $(document).ready(function() {
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <h3 class="text-white header-text font-weight-bold pt150 pb-4">Mineral Water <br> <span class="color">For Everyday</span> </h3>
-                <p class="text-white font-small"><i>Vestibulum non nisi tincidunt, pulvinar nibh sed, accumsan dui. In purus dolor, lobortis eget sapien quis.</i></p>
+                <p class="text-white font-small"><i>Gathering spring water and soaking in hot springs are great ways to get some fresh air and enjoy connecting deeper with nature.</i></p>
                 <div class="pt100 button-responsive">
                     <button class="btn btn-customize btn-read mr-4"><a href="">Read more</a></button>
                     <button class="btn btn-customize btn-make"><a href="">Make order</a></button>
@@ -1287,11 +1292,12 @@ $(document).ready(function() {
     </div>
 </section>
 
-<div class="container-fluid pb-5">
+<div class="container-fluid">
+    <h3 class="mt-3 mineral text-center pb-5">Water Processing</h3>
     <div class="row">
         <iframe width="1440" height="515" src="https://www.youtube.com/embed/TzlVKkvd5H4?start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <h4 class="mt-3 text-center">Water Processing</h4>
+
 </div>
 
 <section class="pt100 pb100 choose-bg">
@@ -1307,7 +1313,7 @@ $(document).ready(function() {
                     <a href="">
                         <h5>Nepal Spring Premium</h5>
                     </a>
-                    <p>Duis et aliquam orci. Vivamus augue quam, ...</p>
+                    <p>There are options to view available water test results, communicate with members, view photos, leave reviews, and so much more!</p>
                     <h6><label for="">Choose product:</label>
                         <select name="" id="">
                             <option value="Jar Security Money = NPR 2500.00 (For 2 Pieces Jar)">Jar Security Money = NPR 2500.00 (For 2 Pieces Jar)</option>
@@ -1346,7 +1352,7 @@ $(document).ready(function() {
                     <a href="">
                         <h5>Nepal Spring</h5>
                     </a>
-                    <p>Duis et aliquam orci. Vivamus augue quam, ...</p>
+                    <p>There are options to view available water test results, communicate with members, view photos, leave reviews, and so much more!</p>
                     <h6><label for="">Choose product:</label>
                         <select name="" id="">
                             <option value="Jar Security Money = NPR 600.00 (For 2 Pieces Jar)">Jar Security Money = NPR 600.00 (For 2 Pieces Jar)</option>
@@ -1400,9 +1406,9 @@ $(document).ready(function() {
             <div class="col-lg-4 col-md-12 col-sm-12 border-inner bordernone">
                 <div class="inner">
                     <h5 class="blue">Our company was founded in 2021</h5>
-                    <h6 class="dark-blue">This Company deals in the field of “Food and Beverage”. We are the fastest growing
-                        company of food and beverage in Nepal. In this episode, we have established a new RO Water
-                        Treatment Plant in Gawaldha, Chalnakhel, Kathmandu to serve the people of NEPAL.</h6>
+                    <p class="dark-blue fs-17"><strong>This Company deals in the field of “Food and Beverage”. We are the fastest growing
+                            company of food and beverage in Nepal. In this episode, we have established a new RO Water
+                            Treatment Plant in Gawaldha, Chalnakhel, Kathmandu to serve the people of NEPAL.</strong></p>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 border-inner">
@@ -1532,7 +1538,8 @@ $(document).ready(function() {
                         <a href="">
                             <h4>What's in your water?</h4>
                         </a>
-                        <p>In efficitur, leo non commodo lacinia, odio metus sodales purus, sed consequat lectus mi in purus. Vivamus vitae metus et nisl egestas sollicitudin. Quisque ...</p>
+                        <p>Our vision is to become fastest growing Number 1 Company of RO Water in Nepal. We want
+                            to reach 90% population of Nepal with our product. The targeted time will be within Year 2025.</p>
                         <a class="" href=""><span class="date">September 25, 2017</span>
                             <ul>
                                 <li class="icon-fav"><span class="fa fa-eye"></span>2,290</li>
@@ -1552,7 +1559,8 @@ $(document).ready(function() {
                         <a href="">
                             <h4>Why do we need to drink water?</h4>
                         </a>
-                        <p>Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam varius. Etiam nec laoreet ...</p>
+                        <p>Our vision is to become fastest growing Number 1 Company of RO Water in Nepal. We want
+                            to reach 90% population of Nepal with our product. The targeted time will be within Year 2025.</p>
                         <a class="" href=""><span class="date">September 25, 2017</span>
                             <ul>
                                 <li class="icon-fav"><span class="fa fa-eye"></span>2,290</li>
@@ -1572,7 +1580,8 @@ $(document).ready(function() {
                         <a href="">
                             <h4>Drinking Water May Prevent Headaches</h4>
                         </a>
-                        <p>Cras mattis cursus tristique. Quisque maximus magna massa. Nulla id rutrum mauris. Donec finibus sit amet odio auctor faucibus. Nam ligula enim, feugiat a ...</p>
+                        <p>Our vision is to become fastest growing Number 1 Company of RO Water in Nepal. We want
+                            to reach 90% population of Nepal with our product. The targeted time will be within Year 2025.</p>
                         <a class="" href=""><span class="date">September 25, 2017</span>
                             <ul>
                                 <li class="icon-fav"><span class="fa fa-eye"></span>2,290</li>
