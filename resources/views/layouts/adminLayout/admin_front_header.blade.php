@@ -84,6 +84,7 @@
             border-radius: 45%;
             background: rgba(255, 255, 255, .7);
             animation: wave 5s linear infinite;
+            visibility: hidden;
         }
 
         .water:after {
