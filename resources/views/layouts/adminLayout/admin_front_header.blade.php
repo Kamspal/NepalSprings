@@ -57,62 +57,6 @@
             display: none;
         }
 
-        .water {
-            width: 75px;
-            height: 75px;
-            background-color: #1D9EE5;
-            position: absolute !important;
-            top: 30%;
-            left: 50%;
-            z-index: 2;
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .water:before,
-        .water:after {
-            content: '';
-            position: absolute;
-            width: 75px;
-            height: 75px;
-            top: -32px;
-            background-color: #fff;
-        }
-
-        .water:before {
-            border-radius: 45%;
-            background: rgba(255, 255, 255, .7);
-            animation: wave 5s linear infinite;
-            visibility: hidden;
-        }
-
-        .water:after {
-            border-radius: 35%;
-            background: rgba(255, 255, 255, .3);
-            animation: wave 5s linear infinite;
-        }
-
-        @keyframes wave {
-            0% {
-                transform: rotate(0);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        #loadingDiv {
-            position: absolute;
-            ;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-        }
-
         .section-bg {
             background: linear-gradient(to right, rgba(0, 44, 143, 1) 0%, rgba(33, 182, 255, 1) 100%) !important;
         }
@@ -1201,23 +1145,6 @@
 </script>
 
 @stack('post_scripts')
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-    $('body').append('<div style="" id="loadingDiv"><div class="water"></div></div>');
-    $(window).on('load', function() {
-        setTimeout(removeLoader, 800); //wait for page load PLUS two seconds.
-    });
-
-    function removeLoader() {
-        $(".water").fadeOut(200, function() {
-            // fadeOut complete. Remove the loading div
-            $("#loadingDiv").remove(); //makes page more lightweight 
-            $(".water").remove(); //makes page more lightweight 
-        });
-    }
-</script>
 
 
 </body>
