@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Nepal Springs') }}</title>
+    <title>{{ config('app.name', 'Nepal Natural Spring') }}</title>
     <link rel="icon" href="/images/nepalsprings-logo.png" style="width:100%" />
 
     <!-- Styles -->

@@ -1311,7 +1311,7 @@ $(document).ready(function() {
                 <div class="water-set">
                     <a href=""><img class="water1" width="220" height="220" src="/images/water1.jpg" alt=""></a>
                     <a href="">
-                        <h5>Nepal Spring Premium</h5>
+                        <h5>Nepal Natural Spring Premium</h5>
                     </a>
                     <p>There are options to view available water test results, communicate with members, view photos, leave reviews, and so much more!</p>
                     <h6><label for="">Choose product:</label>
@@ -1350,7 +1350,7 @@ $(document).ready(function() {
                 <div class="water-set">
                     <a href=""><img class="water1" width="220" height="220" src="/images/water4.jpg" alt=""></a>
                     <a href="">
-                        <h5>Nepal Spring</h5>
+                        <h5>Nepal Natural Spring</h5>
                     </a>
                     <p>There are options to view available water test results, communicate with members, view photos, leave reviews, and so much more!</p>
                     <h6><label for="">Choose product:</label>

@@ -118,7 +118,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center clearfix">
                 <div class="footer-wrapper mb-5">
-                    <h2 class="text-white">Nepal Spring</h2>
+                    <h2 class="text-white">Nepal Natural Spring</h2>
                     <div class="footer-text">
                         <p class="text-white">Our vision is to become fastest growing Number 1 Company of RO Water in Nepal. We want
                             to reach 90% population of Nepal with our product. The targeted time will be within Year 2025.</p>

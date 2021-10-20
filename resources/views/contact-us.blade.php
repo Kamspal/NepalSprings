@@ -480,7 +480,7 @@
                                                     <ul class="social-icons-list   vc_custom_1515710003627 icon-weight-bold" id="like_sc_header_31554914">
                                                         <li class=""><span class="fa fa-mobile"></span><span class="head">+977-9851171230</span></li>
                                                         <li class=""><span class="fa fa-phone"></span><span class="head">+977-01-4240940 (Corp.Office)</span></li>
-                                                        <li class=""><span class="fa fa-envelope"></span><span class="head">info@nepalspring.com, whiteline.nepal@gmail.com,
+                                                        <li class=""><span class="fa fa-envelope"></span><span class="head">info@nepalnaturalspring.com, whiteline.nepal@gmail.com,
                                                                 sachidanand_saraswati@yahoo.com</span></li>
                                                     </ul>
                                                 </div>
