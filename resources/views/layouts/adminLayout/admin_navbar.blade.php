@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Nepal Springs') }}</title>
-    <link rel="icon" href="/images/nepalsprings-logo.png" style="width:100%" />
+    <link rel="icon" href="/images/nepalnaturalspring-logo.png" style="width:100%" />
 
     <!-- Styles -->
     <!-- <link href="/css/app.css" rel="stylesheet"> -->
@@ -372,7 +372,7 @@
     <div id="nav-wrapper">
         <div class="container pos">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/"><img src="/images/nepalsprings-logo.png" alt=""></a>
+                <a class="navbar-brand" href="/"><img src="/images/nepalnaturalspring-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
