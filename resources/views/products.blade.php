@@ -272,7 +272,7 @@
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 21px;
         color: #122C90;
     }
 
