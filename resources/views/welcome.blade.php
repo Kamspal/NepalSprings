@@ -1374,7 +1374,7 @@ $(document).ready(function() {
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 water55">
-                <img class="pt50 water5" width="550" height="614" src="/images/water5.png" alt="">
+                <img class="pt50 water5" width="550" height="614" src="/images/waterspring-cap.png" alt="">
                 <div class="free-tag">
                     <img width="123" height="122" src="/images/free.png" alt="">
                 </div>
