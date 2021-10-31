@@ -1248,7 +1248,7 @@ $(document).ready(function() {
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <img class="pt-5 top-img" src="/images/water.png" alt="">
+                <img class="pt-5 top-img" src="/images/waterspring jar.png" alt="">
             </div>
         </div>
     </div>
@@ -1309,7 +1309,7 @@ $(document).ready(function() {
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="water-set">
-                    <a href=""><img class="water1" width="220" height="220" src="/images/water1.jpg" alt=""></a>
+                    <a href=""><img class="water1" width="220" height="220" src="/images/jar1.jpg" alt=""></a>
                     <a href="">
                         <h5>Nepal Natural Spring Premium</h5>
                     </a>
@@ -1348,7 +1348,7 @@ $(document).ready(function() {
             </div> -->
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="water-set">
-                    <a href=""><img class="water1" width="220" height="220" src="/images/water4.jpg" alt=""></a>
+                    <a href=""><img class="water1" width="220" height="220" src="/images/jar.jpg" alt=""></a>
                     <a href="">
                         <h5>Nepal Natural Spring</h5>
                     </a>
