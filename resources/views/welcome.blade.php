@@ -348,7 +348,7 @@
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 45px;
         margin: 0 0 16px;
         color: #1FB6FF;
         font-family: 'Merriweather';
